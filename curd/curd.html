@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curd-GPPD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <form onsubmit="postdata(); return false">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label>Name</label>
+                            <input type="text" id="name" class="form-control" required />
+
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Email</label>
+                            <input type="email" id="email" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <label>country</label>
+                            <select type="text" id="country" class="form-control">
+                                <option>India</option>
+                                <option>United States</option>
+                                <option>Russia</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>state</label>
+                            <select type="text" id="state" class="form-control">
+                                <option>Tamilnadu</option>
+                                <option>Kerala</option>
+                                <option>Jammu</option>
+                            </select>
+
+
+
+                        </div>
+                        <div class="col-lg-4">
+                            <label>city</label>
+                            <select type="text" id="city" class="form-control">
+                                <option>Madurai</option>
+                                <option>Chennai</option>
+                                <option>Trichy</option>
+                            </select>
+                            <div class="row mt-3">
+                                <div class="col--lg-2">
+                                    <input type="submit" class="btn btn-primary">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <table class="table table-dark table-striped">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">country</th>
+                                <th scope="col">state</th>
+                                <th scope="col">city</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+
+                        </tbody>
+
+                    </table>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+  
+    <script src="data.js"></script>
+</body>
+
+</html>
